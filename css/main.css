@@ -1,0 +1,448 @@
+:root {
+  /* color */
+  --body-light-color: #fff;
+  --body-dark-color: #000;
+  --color-optional: rgb(52, 123, 255);
+  --second-body:#f7f7f7;
+  /* font */
+  --body-font: "Montserrat", sans-serif;
+  --font-thin:100;
+  --font-reguler:400;
+  --font-semi-bold:600;
+  --font-bold:900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--body-light-color);
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  z-index: 2;
+}
+
+.nav-color {
+  background: rgba(255, 255, 255, 0.911);
+  box-shadow: 0px 6px 39px -3px rgba(0, 0, 0, 0.048);
+  transition: all ease-in-out 0.4s;
+}
+
+.bg-tranparent {
+  transition: all ease-in-out 0.4s;
+}
+
+.nav-link {
+  font-size: 13px;
+  color: #000 !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--color-optional) !important;
+}
+
+#beranda {
+  padding: 90px 0;
+}
+#beranda .container .row .konten .tittle {
+  color: var(--body-dark-color);
+  font-size: 45px;
+  font-weight: var(--font-semi-bold);
+}
+#beranda .container .row .konten .tittle .hal {
+  color: var(--body-dark-color);
+  font-weight: var(--font-bold);
+}
+#beranda .container .row .konten .tittle .hal .cepat {
+  color: var(--body-dark-color);
+  font-weight: var(--font-bold);
+  font-style: italic;
+}
+#beranda .container .row .konten .paragraph {
+  color: var(--body-dark-color);
+  font-size: 18px;
+  font-weight: var(--font-reguler);
+}
+#beranda .container .row .konten .btn-hubungi {
+  padding: 10px 25px;
+  background-color: var(--body-dark-color);
+  border-radius: 70px;
+  color: var(--body-light-color);
+  font-weight: var(--font-reguler);
+}
+#beranda .container .row .konten .btn-hubungi:hover {
+  background-color: transparent;
+  border: solid 2px #000;
+  color: var(--body-dark-color);
+}
+
+#apa-itu {
+  padding: 90px 15px;
+}
+#apa-itu .container {
+  background-color: var(--second-body);
+  border-radius: 10px;
+}
+#apa-itu .container .row {
+  color: var(--body-dark-color);
+}
+#apa-itu .container .row .founder .ket h6 {
+  font-weight: var(--font-bold);
+}
+#apa-itu .container .row .founder .ket p {
+  font-weight: var(--font-reguler);
+}
+#apa-itu .container .row .konten {
+  text-align: justify;
+  line-height: 150%;
+  font-weight: var(--font-reguler);
+}
+#apa-itu .container .row .konten #selengkapnya {
+  display: none;
+}
+#apa-itu .container .row .konten #more {
+  border: none;
+  background-color: transparent;
+  color: var(--color-optional);
+  font-style: italic;
+}
+#apa-itu .container .row .konten #more:hover {
+  color: rgb(1, 50, 141);
+}
+
+#pilar {
+  padding: 90px 0;
+  background-color: var(--second-body);
+}
+#pilar .container .atas h3 {
+  font-size: 40px;
+  font-weight: var(--font-semi-bold);
+  text-align: center;
+}
+#pilar .container .atas h3 .hal {
+  font-weight: var(--font-bold);
+}
+#pilar .container .bawah {
+  padding-top: 80px;
+}
+#pilar .container .bawah .card-pilar {
+  background: rgba(255, 255, 255, 0.6117647059);
+  box-shadow: 8px 5px 20px rgba(26, 25, 25, 0.027);
+  border-radius: 20px;
+  padding: 20px 5px;
+  cursor: pointer;
+  min-height: 300px;
+  max-height: 300px;
+}
+#pilar .container .bawah .card-pilar .card-icon img {
+  max-height: 50px;
+  min-height: 50px;
+}
+#pilar .container .bawah .card-pilar .card-body h6 {
+  color: var(--body-dark-color);
+  font-size: 20px;
+  font-weight: var(--font-semi-bold);
+}
+#pilar .container .bawah .card-pilar .card-body p {
+  font-size: 15px;
+  font-weight: var(--font-reguler);
+  padding-top: 10px;
+  text-align: center;
+}
+#pilar .container .bawah .card-pilar:hover {
+  box-shadow: 8px 5px 30px rgba(0, 0, 0, 0.089);
+  background-color: var(--body-light-color);
+  transition: 0.2s;
+}
+
+#tujuan {
+  padding: 90px 0;
+}
+#tujuan .container .row .konten {
+  color: var(--body-dark-color);
+}
+#tujuan .container .row .konten h3 {
+  font-size: 30px;
+  font-weight: var(--font-semi-bold);
+}
+#tujuan .container .row .konten p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+#kehadiran {
+  padding: 90px 0;
+}
+#kehadiran .container .row {
+  display: flex !important;
+  flex-direction: row-reverse;
+}
+#kehadiran .container .row .konten {
+  color: var(--body-dark-color);
+}
+#kehadiran .container .row .konten h3 {
+  font-size: 30px;
+  font-weight: var(--font-semi-bold);
+}
+#kehadiran .container .row .konten p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+#testi {
+  padding: 90px 0;
+}
+#testi .container {
+  display: grid;
+}
+#testi .container .testimoni .title h3 {
+  font-size: 40px;
+  font-weight: var(--font-semi-bold);
+  text-align: center;
+  color: var(--body-dark-color);
+}
+#testi .container .testimoni .title h3 i {
+  color: #202020;
+  font-size: 30px;
+}
+#testi .container .testimoni .title h3 i:hover {
+  color: var(--color-optional);
+}
+#testi .container .testimoni .konten .card {
+  border: none;
+}
+#testi .container .testimoni .konten .card .card-header1 {
+  background-image: url(../img/sidkun.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 300px;
+  min-height: 300px;
+  border-radius: 1000px;
+}
+#testi .container .testimoni .konten .card .card-header2 {
+  background-image: url(../img/mela.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 300px;
+  min-height: 300px;
+  border-radius: 1000px;
+}
+#testi .container .testimoni .konten .card .card-header3 {
+  background-image: url(../img/wima.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 300px;
+  min-height: 300px;
+  border-radius: 1000px;
+}
+#testi .container .testimoni .konten .card .card-header4 {
+  background-image: url(../img/try.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 300px;
+  min-height: 300px;
+  border-radius: 1000px;
+}
+#testi .container .testimoni .konten .card .card-body {
+  text-align: center;
+}
+#testi .container .testimoni .konten .card .card-body button {
+  border: none;
+  background-color: transparent;
+  color: var(--color-optional);
+}
+#testi .container .testimoni .konten .card .card-body button:hover {
+  color: var(--color-optional);
+  font-style: italic;
+  transition: 0.5s;
+}
+
+.modal .modal-content .modal-header .modal-title {
+  font-weight: var(--font-semi-bold);
+}
+.modal .modal-content .modal-body .container {
+  padding: 15px;
+}
+.modal .modal-content .modal-body .container .profile .nama h4 {
+  font-weight: var(--font-semi-bold);
+  font-size: 50px;
+}
+.modal .modal-content .modal-body .container .profile .nama h6 {
+  font-size: 25px;
+  font-weight: var(--font-reguler);
+  color: #b19019;
+}
+.modal .modal-content .modal-body .container .contact span {
+  font-size: 15px;
+}
+.modal .modal-content .modal-body .container .contact a {
+  text-decoration: none;
+}
+.modal .modal-content .modal-body .container .contact a i {
+  font-size: 25px;
+}
+.modal .modal-content .modal-body .container .contact a:hover {
+  border-bottom: solid 2px rgb(0, 81, 255);
+}
+
+#benefit {
+  padding: 90px 0;
+}
+#benefit .container .row .konten {
+  color: var(--body-dark-color);
+}
+#benefit .container .row .konten h3 {
+  font-size: 30px;
+  font-weight: var(--font-semi-bold);
+}
+#benefit .container .row .konten p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+#contact {
+  padding-top: 90px;
+}
+#contact .container-fluid {
+  background-color: var(--second-body);
+  position: relative;
+}
+#contact .container-fluid .atas h3 {
+  font-size: 35px;
+  font-weight: var(--font-semi-bold);
+}
+#contact .container-fluid .atas .btn-hubungi {
+  padding: 10px 25px;
+  background-color: var(--body-dark-color);
+  border-radius: 70px;
+  color: var(--body-light-color);
+  font-weight: var(--font-reguler);
+}
+#contact .container-fluid .atas .btn-hubungi:hover {
+  background-color: transparent;
+  border: solid 2px #000;
+  color: var(--body-dark-color);
+}
+#contact .container-fluid .bawah h6 {
+  font-size: 15px;
+  font-weight: var(--font-reguler);
+}
+#contact .container-fluid .bawah a {
+  font-size: 25px;
+  color: var(--body-dark-color);
+  margin-left: 15px;
+}
+#contact .container-fluid .bawah a:hover {
+  border-bottom: solid 2px #000;
+}
+#contact .container-fluid .toTop {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+#contact .container-fluid .toTop .square {
+  height: 30px;
+  width: 30px;
+  background-color: #afafaf;
+  border-radius: 2px;
+}
+#contact .container-fluid .toTop .square .fa-solid {
+  padding: 5px;
+  color: var(--body-light-color);
+}
+#contact .container-fluid .toTop .square:hover {
+  background-color: #000;
+}
+#contact .container-fluid .toTop .square:hover .fa-solid:hover {
+  color: var(--color-optional);
+}
+
+footer {
+  background-color: var(--second-body);
+}
+footer span {
+  color: var(--body-dark-color);
+  font-size: 12px;
+}
+footer span a {
+  text-decoration: none;
+  color: rgb(25, 0, 255);
+  font-weight: var(--font-semi-bold);
+}
+
+@media only screen and (max-width: 1200px) {
+  .modal .modal-body .foto {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #pilar .container .bawah .card-pilar {
+    max-height: 400px;
+    min-height: 400px;
+  }
+  #kehadiran .container .d-flex {
+    display: flex !important;
+    flex-direction: row-reverse;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #beranda {
+    padding: 30px 0;
+  }
+  #apa-itu .row {
+    padding: 20px !important;
+  }
+  #apa-itu .row .img {
+    padding-top: 25px;
+  }
+  #pilar .container .bawah .card-pilar {
+    max-height: 300px;
+    min-height: 300px;
+  }
+  #contact h3 {
+    font-size: 25px !important;
+  }
+  #tujuan .row {
+    flex-direction: column-reverse;
+  }
+  #tujuan .row img {
+    padding-bottom: 15px;
+  }
+  #kehadiran .row {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  #kehadiran .row img {
+    padding-bottom: 15px;
+  }
+  #benefit .row {
+    flex-direction: column-reverse;
+  }
+  #benefit .row img {
+    padding-bottom: 15px;
+  }
+  .modal .modal-body .container .profile .nama {
+    text-align: center;
+    padding-top: 5px;
+  }
+  .modal .modal-body .container .profile .nama h4 {
+    font-size: 25px !important;
+  }
+  .modal .modal-body .container .profile .nama h6 {
+    font-size: 20px !important;
+  }
+}/*# sourceMappingURL=main.css.map */

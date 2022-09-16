@@ -1,0 +1,545 @@
+    :root {
+    /* color */
+    --body-light-color: #fff;
+    --body-dark-color: #000;
+    --color-optional: rgb(52, 123, 255);
+    --second-body:#f7f7f7;
+    /* font */
+    --body-font: "Montserrat", sans-serif;
+    --font-thin:100;
+    --font-reguler:400;
+    --font-semi-bold:600;
+    --font-bold:900;
+    }
+
+    * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    }
+    body{
+        background-color: var(--body-light-color);
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
+    // navbar
+    .navbar{
+        z-index: 2;
+    }
+    .nav-color{
+        background: rgba(255, 255, 255, 0.911);
+        box-shadow: 0px 6px 39px -3px rgba(0, 0, 0, 0.048);
+        transition: all ease-in-out 0.4s;
+    }
+    .bg-tranparent{
+        transition: all ease-in-out 0.4s;
+    }
+    .nav-link{
+        font-size: 13px;
+        color: #000 !important;
+        font-weight:600;
+    }
+    .nav-link:hover{
+        color: var(--color-optional) !important;
+    }
+
+    // beranda
+    #beranda{
+        padding: 90px 0;
+        .container{
+            .row{
+                .konten{
+                    .tittle{
+                        color: var(--body-dark-color);
+                        font-size: 45px;
+                        font-weight: var(--font-semi-bold);
+                        .hal{
+                            color: var(--body-dark-color);
+                            font-weight: var(--font-bold);
+                            .cepat{
+                            color: var(--body-dark-color);
+                            font-weight: var(--font-bold);
+                            font-style: italic;
+                            }
+                        }
+                    }
+                    .paragraph{
+                        color: var(--body-dark-color);
+                        font-size:18px;
+                        font-weight: var(--font-reguler);
+                    }
+                    .btn-hubungi{
+                    padding: 10px 25px;
+                    background-color: var(--body-dark-color);
+                    border-radius: 70px;
+                    color: var(--body-light-color);
+                    font-weight: var(--font-reguler);
+                    }
+                    .btn-hubungi:hover{
+                        background-color: transparent;
+                        border: solid 2px #000;
+                        color: var(--body-dark-color);
+                    }
+                }
+                
+            }
+        }
+    }
+    // apa-itu
+    #apa-itu{
+        padding: 90px 15px;
+        .container{
+            background-color: var(--second-body);
+            border-radius: 10px;
+            .row{
+                color: var(--body-dark-color);
+                .founder{
+                    .ket{
+                        h6{
+                            font-weight: var(--font-bold);
+                        }
+                        p{
+                            font-weight: var(--font-reguler);
+                        }
+                    }
+                }
+                .konten{
+                    text-align: justify;
+                    line-height: 150%;
+                    font-weight: var(--font-reguler);
+                    #selengkapnya {
+                        display: none;
+                    }
+                    #more{
+                            border: none;
+                            background-color: transparent;
+                            color: var(--color-optional);
+                            font-style: italic;
+                    }
+                    #more:hover{
+                        color: rgb(1, 50, 141);
+                    }
+                }
+            }
+        }
+    }
+    // pilar
+    #pilar{
+        padding: 90px 0;
+        background-color: var(--second-body);
+        .container{
+            .atas{
+                h3{
+                    font-size: 40px;
+                    font-weight: var(--font-semi-bold);
+                    text-align: center;
+                    .hal{
+                        font-weight: var(--font-bold);
+                    }
+                }
+            }
+            .bawah{
+                padding-top: 80px;
+                .card-pilar{
+                    background: #ffffff9c;
+                    box-shadow: 8px 5px 20px rgba(26, 25, 25, 0.027);
+                    border-radius: 20px;
+                    padding: 20px 5px;
+                    cursor: pointer;
+                    min-height: 300px;
+                    max-height: 300px;
+                    .card-icon{
+                        img{
+                            max-height: 50px;
+                            min-height: 50px;
+                        }
+                    }
+                    .card-body{
+                    h6{
+                        color: var(--body-dark-color);
+                        font-size: 20px;
+                        font-weight: var(--font-semi-bold);
+                    }
+                    p{
+                        font-size: 15px;
+                        font-weight: var(--font-reguler);
+                        padding-top: 10px;
+                        text-align: center;
+                    }
+                }
+                }
+                .card-pilar:hover{
+                    box-shadow: 8px 5px 30px rgba(0, 0, 0, 0.089);
+                    background-color: var(--body-light-color);
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+    // tujuan
+    #tujuan{
+        padding: 90px 0;
+        .container{
+            .row{
+                .konten{
+                    color: var(--body-dark-color);
+                    h3{
+                        font-size: 30px;
+                        font-weight: var(--font-semi-bold);
+                    }
+                    p{
+                        font-size: 15px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+    // kehadiran
+    #kehadiran{
+        padding: 90px 0;
+        .container{
+            .row{
+                display: flex!important;
+                flex-direction: row-reverse;
+                .konten{
+                    color: var(--body-dark-color);
+                    h3{
+                        font-size: 30px;
+                        font-weight: var(--font-semi-bold);
+                    }
+                    p{
+                        font-size: 15px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+    //testimonial
+    #testi{
+        padding: 90px 0;
+        .container{
+            display: grid;
+            .testimoni{
+                .title{
+                    h3{
+                    font-size: 40px;
+                    font-weight: var(--font-semi-bold);
+                    text-align: center;
+                    color: var(--body-dark-color);
+                    i{
+                        color: #202020;
+                        font-size: 30px;
+                    }
+                    i:hover{
+                        color: var(--color-optional);
+                    }
+                    }
+                }
+                .konten{
+                    .card{
+                        border: none;
+                        .card-header1{
+                            background-image: url(../img/sidkun.jpeg);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            max-height: 300px;
+                            min-height: 300px;
+                            border-radius: 1000px;
+                        }
+                        .card-header2{
+                            background-image: url(../img/mela.jpg);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            max-height: 300px;
+                            min-height: 300px;
+                            border-radius: 1000px;
+                        }
+                        .card-header3{
+                            background-image: url(../img/wima.jpg);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            max-height: 300px;
+                            min-height: 300px;
+                            border-radius: 1000px;
+                        }
+                        .card-header4{
+                            background-image: url(../img/try.jpg);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            max-height: 300px;
+                            min-height: 300px;
+                            border-radius: 1000px;
+                        }
+                        .card-body{
+                            text-align: center;
+                            button{
+                                border: none;
+                                background-color: transparent;
+                                color: var(--color-optional);
+                            }
+                            button:hover{
+                                color: var(--color-optional);
+                                font-style: italic;
+                                transition: 0.5s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // modal
+    .modal{
+        .modal-content{
+            .modal-header{
+                .modal-title{
+                    font-weight: var(--font-semi-bold);
+                }
+            }
+            .modal-body{
+                .container{
+                    padding: 15px;
+                    .profile{
+                        .nama{
+                            h4{
+                                font-weight: var(--font-semi-bold);
+                                font-size: 50px;
+                            }
+                            h6{
+                                font-size: 25px;
+                                font-weight: var(--font-reguler);
+                                color: #b19019;
+                            }
+                        }
+                    }
+                    .contact{
+                        span{
+                            font-size: 15px;
+                        }
+                        a{
+                            text-decoration: none;
+                            i{
+                                font-size: 25px;
+                            }
+                        }
+                        a:hover{
+                            border-bottom:solid 2px rgb(0, 81, 255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // benefit
+    #benefit{
+        padding: 90px 0;
+        .container{
+            .row{
+                .konten{
+                    color: var(--body-dark-color);
+                    h3{
+                        font-size: 30px;
+                        font-weight: var(--font-semi-bold);
+                    }
+                    p{
+                        font-size: 15px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+    // contact
+    #contact{
+        padding-top: 90px;
+        .container-fluid{
+            background-color: var(--second-body);
+            position: relative;
+            .atas{
+                h3{
+                    font-size: 35px;
+                    font-weight: var(--font-semi-bold);
+                }
+                .btn-hubungi{
+                    padding: 10px 25px;
+                    background-color: var(--body-dark-color);
+                    border-radius: 70px;
+                    color: var(--body-light-color);
+                    font-weight: var(--font-reguler);
+                }
+                .btn-hubungi:hover{
+                    background-color: transparent;
+                    border: solid 2px #000;
+                    color: var(--body-dark-color);
+                }
+                
+            }
+            .bawah{
+                h6{
+                    font-size: 15px;
+                    font-weight: var(--font-reguler);
+                }
+                a{
+                    font-size: 25px;
+                    color: var(--body-dark-color);
+                    margin-left: 15px;
+                }
+                a:hover{
+                    border-bottom: solid 2px #000;
+                }
+            }
+            // button to top
+            .toTop{
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                .square{
+                    height: 30px;
+                    width: 30px;
+                    background-color: #afafaf;
+                    border-radius: 2px;
+                    .fa-solid{
+                        padding: 5px;
+                        color: var(--body-light-color);
+                    }
+                }
+                .square:hover{
+                    background-color: #000;
+                    .fa-solid:hover{
+                        color: var(--color-optional);
+                    }
+                }
+            }
+        }
+    }
+    // footer
+    footer{
+        background-color: var(--second-body);
+        span{
+            color: var(--body-dark-color);
+            font-size: 12px;
+            a{
+                text-decoration: none;
+                color: rgb(25, 0, 255);
+                font-weight: var(--font-semi-bold);
+            }
+        }
+    }
+
+
+
+
+    // responsive
+    @media only screen and (max-width: 1200px) {
+        .modal{
+            .modal-body{
+                .foto{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    // responsive
+    @media only screen and (max-width: 992px) {
+        #pilar{
+            .container{
+                .bawah{
+                    .card-pilar{
+                        max-height: 400px;
+                        min-height: 400px;
+                    }
+                }
+            }
+        }
+        #kehadiran{
+            .container{
+                .d-flex{
+                    display: flex!important;
+                    flex-direction: row-reverse;
+                }
+            }
+        }
+    }
+    // responsive
+    @media only screen and (max-width: 768px) {
+        #beranda{
+            padding: 30px 0;
+        }
+        #apa-itu{
+            .row{
+                padding: 20px !important;
+                .img{
+                    padding-top: 25px;
+                }
+            }
+        }
+        #pilar{
+            .container{
+                .bawah{
+                    .card-pilar{
+                        max-height: 300px;
+                        min-height: 300px;
+                    }
+                }
+            }
+        }
+        #contact{
+            h3{
+                font-size: 25px !important;
+            }
+        }
+        #tujuan{
+            .row{
+                flex-direction: column-reverse;
+                img{
+                    padding-bottom: 15px;
+                }
+            }
+        }
+        #kehadiran{
+            .row{
+                display: flex !important;
+                flex-direction: column-reverse !important;
+                img{
+                    padding-bottom: 15px;
+                }
+            }
+        }
+        #benefit{
+            .row{
+                flex-direction: column-reverse;
+                img{
+                    padding-bottom: 15px;
+                }
+            }
+        }
+        .modal{
+            .modal-body{
+                .container{
+                    .profile{
+                        .nama{
+                            text-align: center;
+                            padding-top: 5px;
+                            h4{
+                                font-size: 25px !important;
+                            }
+                            h6{
+                                font-size: 20px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
